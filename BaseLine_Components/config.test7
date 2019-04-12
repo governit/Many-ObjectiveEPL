@@ -1,0 +1,22 @@
+create attribute1 : Atribute0 measuredIn "number"
+create attribute2 : Atribute1 measuredIn "number"
+create attribute2 : Atribute2 measuredIn "number"
+create attribute2 : Atribute3 measuredIn "number"
+create attribute2 : Atribute4 measuredIn "number"
+create attribute2 : Atribute5 measuredIn "number"
+create attribute2 : Atribute6 measuredIn "number"
+create attribute2 : Atribute7 measuredIn "number"
+create attribute2 : Atribute8 measuredIn "number"
+create attribute2 : Atribute9 measuredIn "number"
+
+Solution_Constraints {
+	
+optimization o1: minimize Atribute0;
+optimization o2: minimize Atribute1;
+optimization o2: minimize Atribute2;
+optimization o2: minimize Atribute3;
+optimization o2: minimize Atribute4;
+optimization o2: minimize Atribute5;
+optimization o2: minimize Atribute6;
+optimization o2: minimize Atribute7;
+}

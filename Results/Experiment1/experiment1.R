@@ -1,0 +1,10 @@
+# Combined graph
+experiment1 = read.csv("./Experiments segundo paper/Experiment1/experiment1_v3.csv")
+pdf(file="./Experiments segundo paper/Experiment1/experiment1-1v2.pdf",height=6,width=10) 
+par(mar=c(4,4,0,1))
+plot(experiment1$Features,experiment1$choco,ylim=c(0.02,14),log="xy", xlab="# Features", ylab="Resolution time (sec)",type="p",pch=19,col="aquamarine3",lwd=5) 
+points(experiment1$Features,experiment1$z3,col="royalblue3",pch=15,lwd=1)    
+lines(experiment1$Features,experiment1$choco,col="aquamarine3",lty="dashed",lwd=5) 
+lines(experiment1$Features,experiment1$z3,col="royalblue3",lty="solid",lwd=3) 
+legend("bottomright",c("choco", "z3"),lty=c(2,1), col=c("aquamarine3", "royalblue3"),lwd=3, pch=c(19,15))
+dev.off()
